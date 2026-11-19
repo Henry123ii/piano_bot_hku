@@ -1,0 +1,26 @@
+HKU PIANO COMPANION v2.1.2 - EDGE SETUP
+========================================
+1. Extract this ZIP to a permanent folder.
+2. In Microsoft Edge open: edge://extensions
+3. Enable Developer mode > Load unpacked > choose this folder (manifest.json).
+4. Pin HKU Piano Companion in the Edge Extensions menu and open it.
+5. Portal login: complete HKU SSO and 2FA.
+6. Reservation: save UID, contact number, Remember and agreement consent.
+7. Test a one-off session with the Test only checkbox deliberately turned ON.
+8. Scheduled booking: save weekly sessions. Automatic weekly booking is OFF
+   by default. Turn it ON and approve its warning only if you want future
+   one-click-free live attempts, subject to manual CAPTCHA if requested.
+9. Use Test notification once. Keep Edge running and your computer awake.
+
+HOW TO UPDATE WITHOUT LOSING SAVED SETTINGS:
+Close pending runs, extract new files into the same installed extension
+folder (replace old files), then click Reload in edge://extensions. Do not
+uninstall and reinstall if you need to preserve saved extension data.
+
+Automatic mode runs once per dated weekly occurrence. A separate Edge booking
+window is launched and left open. Closing the main companion is OK, but closing
+the dedicated booking window interrupts its run. No automatic retries.
+
+All times are Hong Kong time. Release is calculated as the session END minus
+six days, following the project owner's supplied rule; verify HKU's live rules.
+Not affiliated with HKU. Experimental; no guaranteed booking or exact timing.

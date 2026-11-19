@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HKU Piano Companion v2.1.3 — Start here</title>
+<style>body{font:17px/1.6 system-ui,sans-serif;max-width:780px;margin:48px auto;padding:0 24px;color:#17342e;background:#f3f7f6}section{background:#fff;padding:24px 28px;border:1px solid #d6e4dd;border-radius:16px;margin:20px 0}h1{font-size:34px;line-height:1.15}h2{font-size:22px}code{background:#e7f4ee;padding:3px 7px;border-radius:4px}strong{color:#126555}ul{padding-left:23px}li{margin:8px 0}</style>
+</head><body>
+<h1>HKU Piano Companion<br>v2.1.3</h1>
+<p>Separate Edge booking windows, optional automatic weekly reservations, login checks, CAPTCHA alerts and booking-result notifications.</p>
+<section><h2>Update from an earlier version</h2>
+<p>Finish or cancel any running booking first. Extract this package and copy its <strong>contents</strong> into your existing extension folder, including <code>runner.html</code>, <code>runner.js</code>, <code>auto.js</code>, and <code>auto-backend.js</code>. Replace the old files.</p>
+<p>Visit <code>edge://extensions</code>, press <strong>Reload</strong>, refresh any HKU tabs, and reopen the companion. Updating the same installed folder should retain locally saved schedules and preferences; removing and reinstalling may not.</p></section>
+<section><h2>First installation</h2>
+<p>In Edge open <code>edge://extensions</code>, enable <strong>Developer mode</strong>, select <strong>Load unpacked</strong>, and choose the extracted folder containing <code>manifest.json</code>. Use the extension icon to open the companion.</p>
+<p>Do not open <code>app.html</code> directly as a normal webpage. Approve extension permissions only if you trust the local source code.</p></section>
+<section><h2>Get started</h2><ol>
+<li>Click <strong>Portal login</strong> and complete HKU SSO/2FA.</li>
+<li>In <strong>Reservation</strong>, enter your details, enable <strong>Remember</strong>, and read/accept the room agreement.</li>
+<li>For one-off reservations, review the slot and select <strong>Confirm &amp; arm</strong>. A separate Edge window runs that specific attempt. Closing the original companion does not stop it.</li>
+<li>For a safe rehearsal, explicitly select <strong>Test only</strong>. This never clicks Create.</li>
+<li>For weekly sessions, open <strong>Scheduled booking</strong> and save your weekly hour and room. <strong>Automatic weekly booking is OFF by default.</strong></li>
+<li>Optionally enable <strong>Automatic weekly booking</strong> and accept the one-time confirmation. Each future eligible dated session can then run without another confirmation, provided Edge is running and your computer is awake.</li>
+</ol></section>
+<section><h2>What happens in automatic weekly mode?</h2><ul>
+<li><strong>30 minutes before release:</strong> checks whether the HKU session is valid. If not, it requests a notification and opens the login page.</li>
+<li><strong>90 seconds before release:</strong> opens a dedicated Edge booking window, with the form opening target set 60 seconds before release.</li>
+<li><strong>Before release:</strong> retypes the form details and requests the reCAPTCHA checkbox. Interactive challenges require manual solving.</li>
+<li><strong>At the scheduled submission time:</strong> requests one Create click if the form and CAPTCHA are ready. Submission and CAPTCHA timings are preset and require no configuration. Afterward the app requests a result notification.</li>
+</ul><p>Do not close the dedicated window or let your laptop sleep. A click, or HTTP 200, does not guarantee a confirmed reservation. For ambiguous results, inspect HKU My Reservations before retrying.</p>
+<p>Turning automatic mode OFF stops future runs, not an already-running window.</p></section>
+<p>See <code>README.md</code> and the in-app <strong>Instruction &amp; help</strong> button. Unofficial and experimental; live site behavior and exact timing are not guaranteed.</p>
+</body></html>

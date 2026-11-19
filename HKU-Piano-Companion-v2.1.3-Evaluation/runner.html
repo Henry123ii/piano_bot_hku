@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>HKU Piano Companion — Booking window</title><link rel="stylesheet" href="app.css"><link rel="stylesheet" href="runner.css"></head>
+<body>
+<header><div class="brand"><span class="mark">P</span><div><strong>Piano Companion</strong><span>Dedicated booking window</span></div></div><span class="badge" id="modeBadge">Preparing</span></header>
+<main class="runner-main">
+<section class="hero"><div><p class="eyebrow">DEDICATED BOOKING WINDOW · VERSION 2.1.3</p><h1 id="runnerHeading">Preparing your reservation</h1><p id="runnerSummary">Loading booking details securely from this Edge profile.</p></div><span class="tag">ONE SUBMISSION ATTEMPT</span></section>
+<div id="runnerFlash" class="flash" role="alert" hidden></div>
+<section class="card progress-card" aria-live="polite">
+<div class="section-title"><h2 id="stage">Starting</h2><span id="countdown" class="countdown">--:--</span></div>
+<p class="muted" id="stageDetail">Checking the booking request.</p><div class="progress-track"><div id="progressBar"></div></div>
+<div class="run-actions"><button id="showBooking" class="secondary" type="button">Show HKU booking tab</button><button id="cancelRun" class="danger" type="button">Cancel pending attempt</button><button id="exportLog" class="text-button" type="button">Export log</button></div>
+<div id="captchaBanner" class="captcha-banner" hidden><strong>Manual CAPTCHA needed</strong><p id="captchaText">Complete the challenge in the HKU tab.</p><button id="solveCaptcha" class="primary" type="button">Open CAPTCHA tab</button></div>
+<details open><summary>Booking progress</summary><pre id="log" class="log"></pre></details>
+<section id="resultSection" hidden><h3>HKU response</h3><p id="resultMeta" class="muted"></p><pre id="resultText" class="result-text"></pre><details id="rawDetails" hidden><summary>Observed booking response (local only)</summary><pre id="rawResponse" class="raw-response"></pre></details><p class="hint">A sent click or HTTP 200 is not proof of a confirmed booking. If unclear, inspect My Reservations. No automatic retry is made.</p></section>
+</section><p class="hint" id="runnerFoot">You can browse in another Edge window. Keep this dedicated booking window open and your computer awake. CAPTCHA may require your attention.</p>
+</main><script src="shared.js"></script><script src="schedule.js"></script><script src="typing.js"></script><script src="runner.js"></script></body></html>
