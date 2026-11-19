@@ -4,9 +4,6 @@
 
 Select a one-hour room slot, or save a weekly timetable. The extension prepares the HKUFBS form in a **separate Edge window**, requests one reCAPTCHA checkbox interaction, and checks the actual portal response. An optional **Automatic weekly booking** switch makes a single attempt for each eligible saved weekly occurrence without another manual confirmation.
 
-
-**Evaluation edition:** This copy uses the v2.1.1 scheduling and submission engine, without the high-precision timer from v2.2.0. It has no expiry and requires no activation. Submission, reCAPTCHA and manual-verification timings are **fixed internally**, without editable controls. Old saved preferences cannot override the presets. Browser timing is not a guarantee of precise server receipt.
-
 This copy is intended for individual evaluation; please do not redistribute or resell it without the project owner's permission.
 
 ![HKU Piano Companion home screen](docs/screenshots/home.png)
